@@ -11,7 +11,7 @@ import net.dv8tion.jda.api.entities.Activity;
 
 public class Main{
 	
-	public static String prefix = "@";
+	public static String prefix = "!";
 	public static JDA jda;
 
 	public static void main(String[] args) throws LoginException{
