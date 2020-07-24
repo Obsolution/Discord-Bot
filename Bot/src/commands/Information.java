@@ -7,11 +7,11 @@ import net.dv8tion.jda.api.hooks.ListenerAdapter;
 
 public class Information extends ListenerAdapter {
 
-	public void onGuildMessageReceivedEvent(GuildMessageReceivedEvent event) {
+	public void onGuildMessageReceived(GuildMessageReceivedEvent event) {
 		String[] args = event.getMessage().getContentRaw().split(" ");
 
 		// Commands info
-		if (args[0].equalsIgnoreCase(Main.prefix + "cmds1")) {
+		if (args[0].equalsIgnoreCase(Main.prefix + "cmds")) {
 			EmbedBuilder b = new EmbedBuilder();
 			b.setTitle("Starter Bot Commands");
 			b.setDescription("!hi = Command for bot to say hi\n" + "!owner = tells you about the owner\n"
