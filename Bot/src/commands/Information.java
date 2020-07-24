@@ -29,9 +29,14 @@ public class Information extends ListenerAdapter {
 			event.getChannel().sendMessage("Hello! Welcome to Absolute Infinity").queue();
 		}
 
-		// Admin info
+		// Administrator info
 		if (args[0].equalsIgnoreCase(Main.prefix + "admin")) {
 			event.getChannel().sendMessage("Admins are amazing").queue();
+		}
+
+		// Moderator info
+		if (args[0].equalsIgnoreCase(Main.prefix + "mod")) {
+			event.getChannel().sendMessage("Mods are good").queue();
 		}
 	}
 }
