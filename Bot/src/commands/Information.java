@@ -23,17 +23,15 @@ public class Information extends ListenerAdapter {
 			b.setFooter("Creater by ", event.getMember().getUser().getAvatarUrl());
 
 			event.getChannel().sendMessage(b.build()).queue();
-
-			// Hello command
-			if (args[0].equalsIgnoreCase(Main.prefix + "hi")) {
-				event.getChannel().sendMessage("Hello! Welcome to Absolute Infinity").queue();
-			}
-
-			// Admin info
-			if (args[0].equalsIgnoreCase(Main.prefix + "admin")) {
-				event.getChannel().sendMessage("Admins are amazing").queue();
-			}
+		}
+		// Hello command
+		if (args[0].equalsIgnoreCase(Main.prefix + "hi")) {
+			event.getChannel().sendMessage("Hello! Welcome to Absolute Infinity").queue();
 		}
 
+		// Admin info
+		if (args[0].equalsIgnoreCase(Main.prefix + "admin")) {
+			event.getChannel().sendMessage("Admins are amazing").queue();
+		}
 	}
 }

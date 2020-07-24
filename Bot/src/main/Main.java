@@ -15,7 +15,7 @@ public class Main{
 	public static JDA jda;
 
 	public static void main(String[] args) throws LoginException{
-		jda = new JDABuilder(AccountType.BOT).setToken("NzM0ODkyNzM0MjkyNDI2ODIz.XxYX1Q.hWjhmlhDNV4dRJ0NmNg6p_DdNME").build();
+		jda = JDABuilder.createDefault("NzM0ODkyNzM0MjkyNDI2ODIz.XxYX1Q.hWjhmlhDNV4dRJ0NmNg6p_DdNME").build();
 		jda.getPresence().setStatus(OnlineStatus.ONLINE);
 		jda.getPresence().setActivity(Activity.watching("starter shit"));
 		
