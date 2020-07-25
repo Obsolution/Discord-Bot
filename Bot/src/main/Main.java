@@ -2,6 +2,7 @@ package main;
 
 import javax.security.auth.login.LoginException;
 
+import commands.Clear;
 import commands.Information;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
@@ -21,6 +22,7 @@ public class Main {
 		
 		// Calls commands
 		jda.addEventListener(new Information());
+		jda.addEventListener(new Clear());
 	}
 
 }
